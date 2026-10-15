@@ -1,0 +1,14 @@
+Ticket number: NMG-0047
+
+Affected user: Jane Cooper jcooper@NMG.com
+
+Issue reported: Jane Cooper was unable to access HR shared resources. Desktop policies and mapped drives differ from teammates.
+
+Root cause: upon investigating I identified that she was assigned to the wrong OU (was found in Operations OU ) instead of being assigned to HR OU. Upon further research, I also discovered that she was assigned to the wrong security group. Jane was located in the Operation-Users group, but she should be in the HR-Users group.
+
+Fix applied: I removed her user from Operations OU by moving her into HR OU. This relocated her user to the correct department/OU (HR) , then I removed her access to Operations-Users and gave her the access that she needed based on her role in the company which is HR Payroll specialist. I assigned her to HR-Users security group because this access is related to her role. 
+
+Verification: After making the above changes I confirmed that she was assigned to the correct OU along with the correct security group. I also reached out to the user to confirm if the problem still persisted and she confirmed that the issue has been resolved.
+
+Date resolved: 10/14/2026
+Resolved by: Sashauna Dixon
