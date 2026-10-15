@@ -1,10 +1,10 @@
 # Basic Employee Onboarding (AD)(RBAC)
 
 ## Problem Statement
-[Provide 3 to 5 sentences describing what was broken at Northstar Medical Group. Mention the MSP mismanagement, lack of structure, manual processes, and HIPAA risks that existed before your project.]
+* The MSP faced significant compliance risks due to the absence of a structured access management process. As a result, employees were frequently granted inappropriate levels of access, increasing the likelihood of unauthorized exposure to sensitive data. This lack of governance created potential HIPAA compliance violations and exposed the organization to substantial regulatory fines and penalties. To mitigate these risks, the company required a formal, streamlined, and scalable access control process to ensure compliance and strengthen security oversight.
 
 ## Solution Overview
-[Provide 4 to 6 sentences describing what you built and how it solved the problem. Cover the new domain creation, the structural OU design, the security groups, the flat RBAC model, and how user provisioning was secured.]
+* I created a new Active Directory domain and organized the environment using Organizational Units (OUs) for each department. Employees were placed into the appropriate OU based on their role within the company, making user management more organized and efficient. I then created security groups and assigned users according to their job responsibilities to ensure they received the correct level of access. Using a flat Role-Based Access Control (RBAC) model, permissions were managed through group membership rather than individual user assignments. This approach improved security, simplified user provisioning, and helped ensure employees had access only to the resources needed to perform their jobs.
 
 ## Video Walkthrough
 [Add your video walkthrough link placeholder here. You will record this tomorrow and update this link so visitors can see a live demonstration of your lab environment.]
@@ -26,5 +26,5 @@
 
 ## Key Accomplishments
 * Built NMG.com domain from scratch
-* [Add your second key accomplishment here]
-* [Add your third key accomplishment here]
+* Helped the MSP be HIPPA compliant
+* Implemented a more structured Access Control System
