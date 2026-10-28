@@ -1,14 +1,14 @@
 Ticket number: NMG-0047
 
-Affected user: Jane Cooper jcooper@NMG.com
+Affected User: Jane Cooper (jcooper@NMG.com)
 
-Issue reported: Jane Cooper was unable to access HR shared resources. Desktop policies and mapped drives differ from teammates.
+Issue Reported: Jane Cooper was unable to access HR shared resources. Additionally, her desktop policies and mapped network drives differed from those assigned to other members of the HR department.
 
-Root cause: upon investigating I identified that she was assigned to the wrong OU (was found in Operations OU ) instead of being assigned to HR OU. Upon further research, I also discovered that she was assigned to the wrong security group. Jane was located in the Operation-Users group, but she should be in the HR-Users group.
+Root Cause: Upon investigation, I identified that Jane's account was assigned to the incorrect Organizational Unit (OU). Her user account was located in the Operations OU instead of the HR OU. Further review revealed that she was also a member of the incorrect security group. Jane was assigned to the Operations-Users security group when she should have been assigned to the HR-Users security group. These misconfigurations resulted in the application of incorrect Group Policy settings and access permissions.
 
-Fix applied: I removed her user from Operations OU by moving her into HR OU. This relocated her user to the correct department/OU (HR) , then I removed her access to Operations-Users and gave her the access that she needed based on her role in the company which is HR Payroll specialist. I assigned her to HR-Users security group because this access is related to her role. 
+Fix Applied: I moved Jane's user account from the Operations OU to the HR OU to align it with her department. I then removed her membership from the Operations-Users security group and added her to the HR-Users security group in accordance with her role as an HR Payroll Specialist. This ensured that the appropriate policies, mapped drives, and resource permissions were applied to her account.
 
-Verification: After making the above changes I confirmed that she was assigned to the correct OU along with the correct security group. I also reached out to the user to confirm if the problem still persisted and she confirmed that the issue has been resolved.
+Verification: After making the required changes, I verified that Jane's account was assigned to the correct OU and security group. I also confirmed that the appropriate access permissions and policies were being applied. Follow-up was conducted with the user, who confirmed that access to HR shared resources had been restored and that the issue was fully resolved.
 
-Date resolved: 10/14/2026
-Resolved by: Sashauna Dixon
+Date Resolved: 10/14/2026
+Resolved By: Sashauna Dixon
